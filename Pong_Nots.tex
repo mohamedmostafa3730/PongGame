@@ -1,0 +1,62 @@
+(1) what I learn from Pong Program? 
+1- Movement;
+2- Controls;
+3- Collision Detdction;
+4- Scoring;
+5- Artificial Intelligence;
+=========================================================
+(2) Steps to develop Pong: 
+1- Create a blank screen & game loop;
+2- Draw the paddles and the ball;
+3- Move the ball around;
+4- check for a Collision with all paddles;
+5- Move the player's paddle;
+6- Move the CPU paddle with Artificial Intelligence;
+7- check for a Collision with paddles;
+8- Add Scoring;
+=========================================================
+(3-1) [Step #1] Create a blank screen & game loop: 
+every game Structure -> Definitions | Game loop ;
+this game -> Definitions -> defining the variables needed | Creatting the game objects ;
+          -> Game loop -> Updating the positions of the game objects | checking for collisions ;
+=========================================================
+(3-2) [Step #2] Draw the paddles and the ball: 
+How to draw with [Raylib] => { Rectangle - Circle - Line - Poly }
+ 1- void DrowRectangle(int posX, int posY, int height, Color color);
+ 2- void DrowCircle(int centerX, int centerY, float radius, Color color);
+ 3- void DrowLine(int startPosX, int startPosY, int endPosx, int endPosY, Color color);
+ 4- void DrowPoly(Vector2 center, int sides, float radius, float rotation, Color color); 
+
+=========================================================
+(3-3) [Step #3] Move the ball around: 
+  In this Step I make a Ball Class to then, used functions sach as : 
+  1- void DrowCircle(int centerX, int centerY, float radius, Color color); // in raylib Library //
+  2- ClearBackground(Color color); // in raylib Library //
+  3- Draw(); 
+  4- Update();
+=========================================================
+(3-4) [Step #4] check for a Collision with all paddles:
+ Add if condation in Update() and, used functions sach as:
+ 1- GetScreenHeight();   // in raylib Library //
+ 2- GetScreenWidth();   // in raylib Library //
+
+
+=========================================================
+(3-5) [Step #5] Move the player's paddle:
+ Make the player class to control of Rectangle & fix some issues,
+ use some functions sach as:
+ 1- IsKeyDown(KEY_UP) // in raylib Library //
+ 2- IsKeyDown(KEY_DOWN) // in raylib Library //
+ 3- GetScreenHeight() // in raylib Library //
+ 3- Draw(); 
+ 4- Update();
+ =========================================================
+ (3-6) [Step #6] Move the CPU paddle with Artificial Intelligence: 
+
+
+
+
+
+
+
+=========================================================
