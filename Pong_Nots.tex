@@ -51,12 +51,26 @@ How to draw with [Raylib] => { Rectangle - Circle - Line - Poly }
  3- Draw(); 
  4- Update();
  =========================================================
- (3-6) [Step #6] Move the CPU paddle with Artificial Intelligence: 
-
-
-
-
-
-
-
+ (3-6) [Step #6] Move the CPU paddle with Artificial Intelligence:
+  Make the CPU paddle class to control of paddle with CPU's AI,
+  and, the CPU paddle class is inhertns of paddle class to use some functions,
+  and, use some functions sach as:
+  1- CPU.Update();
+  2- CPU.Draw();
+  3- LimitMovement();
+  and, use some data sach as:
+  1- CPU.width;
+  2- CPU.height;
+  3- CPU.x;
+  4- CPU.y;
+  5- CPU.speed;
+=========================================================
+(3-7) [Step #7] check for a Collision with paddles:
+ USE Collision Detection functions:
+  1- CheckCollisionCircleRec(Vector2 center, float radius, Rectangle rec);
+=========================================================
+(3-8) [Step #8] Add Scoring;
+ Make 2 variables ( player_score | CPU_score )
+ DrawText(text, xpos, ypos, fontsize, color);
+ DrawRectangleRounded(rec, roundness, segment, color);
 =========================================================
